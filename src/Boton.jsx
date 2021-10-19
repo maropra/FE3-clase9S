@@ -1,27 +1,23 @@
-import React from 'react';
+import React from "react";
 
 class Boton extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            color: "blanco"
-        }
-        this.handleColorChange = this.handleColorChange(this);
-        console.log(this.state);
-    }
+  constructor() {
+    super();
+    this.state = {
+      color: "blanco"
+    };
+  }
 
-    handleColorChange() {
-        this.setState({
-            color: "rojo"
-        })
-        //console.log(this.setState);
-    }
+  handleColorChange = () => {
+    this.setState({
+      color: "rojo"
+    });
+    console.log(this.state);
+  };
 
-    render() {
-        return (
-            <button onClick={this.handleColorChange}>Click me!</button>
-        );
-    }
+  render() {
+    return <button onClick={this.handleColorChange}>Click me!</button>;
+  }
 }
 
 export default Boton;

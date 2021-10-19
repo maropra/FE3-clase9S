@@ -1,17 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import MiBoton from './Boton';
+import "./App.css";
+import Boton from "./Boton";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Click to change <code>state</code>, watch the console.
         </p>
-        <MiBoton />
-
+        <Boton />
       </header>
     </div>
   );
